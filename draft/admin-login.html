@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GoBus — Admin Login</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="admin.css">
+  <script defer src="admin.js"></script>
+</head>
+
+<body>
+
+  <div class="login-wrap">
+    <div class="login-card">
+      
+      <h2>
+        <span style="color:#ffeb54;">GoBus</span>
+        <span style="color:#1c6df6;">Admin</span>
+      </h2>
+
+      <div class="login-sub">Administrator access — keep this URL private</div>
+
+      <form id="loginForm" onsubmit="handleLoginForm(event)">
+        <label>Email</label>
+        <input id="loginEmail" type="text" placeholder="Enter your email" />
+        <div id="loginEmailErr" style="color:#cc2d2d;height:18px;margin-bottom:8px;"></div>
+
+        <label>Password</label>
+        <input id="loginPass" type="password" placeholder="Enter your password" />
+        <div id="loginPassErr" style="color:#cc2d2d;height:18px;margin-bottom:8px;"></div>
+
+        <div class="row">
+          <button class="btn btn-primary" type="submit">Login</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>
